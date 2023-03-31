@@ -2,10 +2,10 @@ const { Schema, model } = require("mongoose");
 
 // The reactionSchema defines the shape for the reaction subdocument
 const reactionSchema = new Schema({
-  reactionId: {
-    type: Schema.Types.ObjectId,
-    default: () => new Types.ObjectId(),
-  },
+  // reactionId: {
+  //   type: Schema.Types.ObjectId,
+  //   default: () => new Types.ObjectId(),
+  // },
   reactionBody: {
     type: String,
     required: true,
