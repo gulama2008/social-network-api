@@ -1,5 +1,6 @@
 const { Schema, model } = require("mongoose");
 
+// The reactionSchema defines the shape for the reaction subdocument
 const reactionSchema = new Schema({
   reactionId: {
     type: Schema.Types.ObjectId,
@@ -53,9 +54,6 @@ const thoughtSchema = new Schema(
     id: false,
   }
 );
-
-// The reactionSchema defines the shape for the reaction subdocument
-
 
 // Create a virtual property `reactionCount` that gets the length of the reactions array field on query
 thoughtSchema
